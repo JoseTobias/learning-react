@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { combineReducers, createStore } from 'redux'
+import { applyMiddleware, createStore } from 'redux'
 import { Provider } from 'react-redux'
+import promisse from 'redux-promise'
+import multi from 'redux-multi'
+import thunk from 'redux-thunk'
+
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import './index.css';
 import App from './App';
+import reducers from './components/todo/reducers'
 
-const reducers = combineReducers({
-    field: () => ({ value: 'Opa'})
-})
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__
+    && window.__REDUX_DEVTOOLS_EXTENSION__()
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = applyMiddleware(multi, thunk, promisse)(createStore)(reducers, devTools)
+
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>
+, document.getElementById('root'));
