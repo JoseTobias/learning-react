@@ -14,3 +14,9 @@
     opacity: 0.7;
     text-decoration: none;
 }
+
+.main-sidebar {
+    background-color: #000;
+    height: 100%;
+    display: flex;
+}
