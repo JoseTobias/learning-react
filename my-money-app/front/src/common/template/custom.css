@@ -49,3 +49,23 @@
     padding-left: 10px;
     margin-top: 5px;
 }
+
+.main-footer {
+    background-color: #333;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.main-footer strong {
+    color: #fff;
+}
+
+.main-footer strong a {
+    color: #fff;
+}
+
+.main-footer strong a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
