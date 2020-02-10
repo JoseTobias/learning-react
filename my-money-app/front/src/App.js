@@ -4,6 +4,7 @@ import './App.css';
 import Header from '../src/common/template/header'
 import SideBar from '../src/common/template/sideBar'
 import Footer from '../src/common/template/footer'
+import Routes from './routes'
 
 export default (props) => (
   <div className='app'>
@@ -11,7 +12,7 @@ export default (props) => (
     <div className='main'>
       <SideBar />
       <div className='p-2'>
-        <h1>Conteúdo</h1>
+        <Routes />
       </div>
     </div>
     <Footer />
