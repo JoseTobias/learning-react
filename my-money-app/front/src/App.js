@@ -11,7 +11,7 @@ export default (props) => (
     <Header />
     <div className='main'>
       <SideBar />
-      <div className='p-2'>
+      <div className='p-2 w-100'>
         <Routes />
       </div>
     </div>
