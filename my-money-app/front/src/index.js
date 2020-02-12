@@ -15,7 +15,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import './common/template/custom.css'
 
-const store = applyMiddleware(promisse)(createStore)(reducers)
+const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+
+const store = applyMiddleware(promisse)(createStore)(reducers, devTools)
 
 ReactDOM.render(
     <Provider store={store}>
