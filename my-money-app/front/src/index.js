@@ -8,12 +8,12 @@ import thunk from 'redux-thunk'
 
 import reducers from './reducers'
 
-import './index.css';
 import App from './App';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import './common/template/custom.css'
+import './index.css';
 
 const devTools = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
