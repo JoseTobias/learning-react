@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import DashboardReducer from './dashboard/reducer'
+import TabReducer from './common/tab/reducer'
 
 const rootReducer = combineReducers({
-    dashboard: DashboardReducer
+    tab: TabReducer
 })
 
 export default rootReducer
