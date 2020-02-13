@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default props => (
-    <div className="nav-tabs-custom p-3">
+    <div className="nav-tabs-custom">
         {props.children}
     </div>
 )

@@ -102,7 +102,6 @@
 
 .nav-tabs {
     flex-grow: 1;
-    border: none;
 }
 
 .nav-tabs li:not(:first-child) {
