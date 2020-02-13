@@ -95,8 +95,7 @@
 }
 
 .nav-tabs-custom {
-    display: flex;
-    flex-grow: 1;
+    width: 100%;
     background-color: #fff;
 }
 
@@ -115,4 +114,12 @@
 .nav-tabs li a:hover {
     opacity: 0.7;
     text-decoration: none;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
 }
